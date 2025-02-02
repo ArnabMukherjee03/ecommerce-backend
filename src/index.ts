@@ -1,8 +1,8 @@
 import app from './app'
+import logger from './config/logger'
 
 const PORT = process.env.PORT || 3000
 
 app.listen(PORT, () => {
-  // eslint-disable-next-line no-console
-  console.log(`Server running on port ${PORT}`)
+  logger.info(`🚀 Server is up and running on port ${PORT}`)
 })
