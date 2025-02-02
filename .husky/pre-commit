@@ -1,0 +1,18 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo "Running spell checker..."
+if npm run spellcheck ; then
+  echo "✅ All spell checks are passed."
+else
+  echo "❌ Pre-commit hook failed. Fix the spelling issues above or add them to cspell.json file before committing."
+  exit 1
+fi
+
+echo "Running eslint checker..."
+if npm run lint ; then
+  echo "✅ All lint checks are passed."
+else
+  echo "❌ Pre-commit hook failed. Fix the lint issues above before committing."
+  exit 1
+fi
