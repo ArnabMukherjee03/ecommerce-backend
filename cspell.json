@@ -1,0 +1,13 @@
+{
+  "language": "en",
+  "ignorePaths": [
+    "**/node_modules/**",
+    "**/dist/**",
+    "**/build/**"
+  ],
+  "words": [
+    "Arnab",
+    "ecommerce",
+    "Mukherjee"
+  ]
+}

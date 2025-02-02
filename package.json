@@ -1,0 +1,33 @@
+{
+  "name": "ecommerce-backend",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "scripts": {
+    "build": "tsc",
+    "start": "npm run build && node ./dist/src/index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepare": "husky",
+    "spellcheck": "cspell 'src/'"
+  },
+  "author": "Arnab Mukherjee",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/js": "^9.19.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.10",
+    "cspell": "^8.17.3",
+    "eslint": "^9.19.0",
+    "eslint-plugin-unicorn": "^56.0.1",
+    "globals": "^15.14.0",
+    "husky": "^9.1.7",
+    "tsc-node": "^0.0.3",
+    "typescript": "^5.7.3",
+    "typescript-eslint": "^8.21.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
